@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>Controlador</servlet-name>
+        <servlet-class>Controlador.Controlador</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Validar</servlet-name>
+        <servlet-class>Controlador.Validar</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Controlado</servlet-name>
+        <servlet-class>controlador.Controlado</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Valida</servlet-name>
+        <servlet-class>controlador.Valida</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Controlador</servlet-name>
+        <url-pattern>/Controlador</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Validar</servlet-name>
+        <url-pattern>/Validar</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Controlado</servlet-name>
+        <url-pattern>/Controlado</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Valida</servlet-name>
+        <url-pattern>/Valida</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <context-param>    
+        <param-name>host</param-name>
+        <param-value>smtp.gmail.com</param-value>
+    </context-param>  
+    
+    <context-param>    
+        <param-name>puerto</param-name>
+        <param-value>587</param-value>
+    </context-param> 
+    <context-param>    
+        <param-name>usuario</param-name>
+        <param-value>goodlife2020sistema@gmail.com</param-value>
+    </context-param> 
+    <context-param>    
+        <param-name>clave</param-name>
+        <param-value>Gol1234567</param-value>
+    </context-param> 
+</web-app>

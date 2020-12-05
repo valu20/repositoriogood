@@ -1,0 +1,6 @@
+#tarjetas{
+    display: flex;
+}
+.tarjeta img{
+    width: 100%;
+}
